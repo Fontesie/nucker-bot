@@ -11,7 +11,7 @@ client = new Discord.Client({
 client.commands = new Discord.Collection();
 client.aliases = new Discord.Collection();
 client.event = new Discord.Collection();
-client.login(config.token).then(r => console.log("Logged on "+client.user.tag+"\n\nOwnner ID: "+config.idowner+"\nPrefix:"+config.prefix+""));
+client.login(config.token).then(r => console.log("Logged on "+client.user.tag+"\n\nOwnner ID: "+config.idowner+"\nPrefix: "+config.prefix+""));
 
 
 
