@@ -5,5 +5,5 @@
 
 
 <h1 style="color:blue;">💻 Nucker bot discord </h1>
-<h1 style="color:blue;">📶 Mon discord : Fontesie#2621</h1>
-<h2>💻 Mon serveur Discord : https://discord.gg/nJnHs8m8dk</h2>
+<h1 style="color:blue;">📶 Mon discord : Fontesie#9297</h1>
+<h2>💻 Mon serveur Discord : no</h2>
